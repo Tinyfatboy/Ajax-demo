@@ -18,7 +18,7 @@
         var page = 1
         loadImg.onclick = function () {
             var request = new XMLHttpRequest()
-            request.open('GET', 'https://tinyfatboy.github.io/Ajax-demo/' + page + '.json')
+            request.open('GET', 'https://tinyfatboy.github.io/Ajax-demo/page' + page + '.json')
             request.onload = function () {
                 if (page === 5) {
                     loadImg.setAttribute('disabled', 'true')
